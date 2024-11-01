@@ -23,6 +23,10 @@ const projectData = [
         description: "A visita à EDUZZ proporcionou uma visão do dinamismo de trabalho em uma empresa focada em inovação e colaboração. Pude acompanhar as interações das equipes e participar de sessões de brainstorming, reforçando a importância do trabalho em equipe."
     },
     {
+        title: "Ikigai (12/08/2022)",
+        description: "Já no quinto aula de P-Tech, foi nos ensinado sobre o 'Ikigai' e a sua importancia na nossa vida técnica desenvolvida para nos autoconhecermos em nossa vida pessoal e profissional.."
+    },
+    {
         title: "Comunicação Interpessoal - como melhorar a sua? (30/09/2022)",
         description: "Exploramos maneiras de aprimorar a comunicação interpessoal, enfatizando a importância da escuta ativa, clareza nas mensagens e a prática de empatia para evitar mal-entendidos e fortalecer conexões."
     },
