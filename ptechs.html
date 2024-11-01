@@ -1,186 +1,112 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-        <!-- Bootstrap -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        <!-- CSS -->
-        <link rel="stylesheet" href="css/style.css" />  
-        <link rel="stylesheet" href="css/extends.css" />
+const projectTitle = document.getElementById("projectTitle");
+const projectDetails = document.getElementById("projectDetails");
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
-          rel="stylesheet"/>
-</head>
-<body>
-    <!-- navbar -->
-    <nav class="navbar">
-        <div class="navbar__content max-width mb-0">
-          <ul class="navbar__links">
-            <li><a class="secondary-title" href="index.html">Home</a></li>
-          </ul>
-          <div class="navbar__mobile">
-            <img src="assets/menu.svg" alt="menu" class="burguer" />
-            <ul class="mobile__links">
-                <li><a class="secondary-title" href="index.html">Home</a></li>
-            </ul>
-          </div>
-  
-          <div class="theme-toggle">
-            <input type="checkbox" class="checkbox" id="chk" />
-            <label class="label" for="chk">
-              <i class="fas fa-moon"></i>
-              <i class="fas fa-sun"></i>
-              <div class="ball"></div>
-            </label>
-          </div>
-  
-        </div>
-      </nav>
-      <br>
-      <br>
-      <section class="main-content">
-        <div class="container">
-            <div id="projectCarousel" class="carousel slide ">
-                <!-- Indicadores de slide -->
-                <div class="carousel-indicators ">
-                  <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="24" aria-label="Slide 25"></button>
-                  <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                  <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="25" aria-label="Slide 26"></button>
-                  <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                  <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                  <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                  <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
-                  <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
-                  <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
-                  <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="10" aria-label="Slide 11"></button>
-                  <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="11" aria-label="Slide 12"></button>
-                  <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="12" aria-label="Slide 13"></button>
-                  <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="13" aria-label="Slide 14"></button>
-                  <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="14" aria-label="Slide 15"></button>
-                  <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="15" aria-label="Slide 16"></button>
-                  <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="16" aria-label="Slide 17"></button>
-                  <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="17" aria-label="Slide 18"></button>
-                  <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="18" aria-label="Slide 19"></button>
-                  <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="19" aria-label="Slide 20"></button>
-                  <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="20" aria-label="Slide 21"></button>
-                  <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="21" aria-label="Slide 22"></button>
-                  <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="22" aria-label="Slide 23"></button>
-                  <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="23" aria-label="Slide 24"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./img/eu.jpeg" class="d-block feature-img mx-auto" alt="Imagem 1">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./ptech/premios.jpeg" class="d-block feature-img mx-auto" alt="Imagem 24">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./ptech/1.jpeg" class="d-block feature-img mx-auto" alt="Imagem 2">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/02.jpg" class="d-block feature-img mx-auto" alt="Imagem 3">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/img2.jpg" class="d-block feature-img mx-auto" alt="Imagem 4">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./ptech/ikigai.jpg" class="d-block feature-img mx-auto" alt="Imagem 26">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/03.jpg" class="d-block feature-img mx-auto" alt="Imagem 5">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/18.jpg" class="d-block feature-img mx-auto" alt="Imagem 6">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/05.jpg" class="d-block feature-img mx-auto" alt="Imagem 7">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/06.png" class="d-block feature-img mx-auto" alt="Imagem 8">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/07.png" class="d-block feature-img mx-auto" alt="Imagem 9">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/02.png" class="d-block feature-img mx-auto" alt="Imagem 10">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/08.jpg" class="d-block feature-img mx-auto" alt="Imagem 11">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/09.jpeg" class="d-block feature-img mx-auto" alt="Imagem 12">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/10.jpeg" class="d-block feature-img mx-auto" alt="Imagem 13">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/17.jpg" class="d-block feature-img mx-auto" alt="Imagem 14">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/12.png" class="d-block feature-img mx-auto" alt="Imagem 15">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/13.png" class="d-block feature-img mx-auto" alt="Imagem 16">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/14.png" class="d-block feature-img mx-auto" alt="Imagem 17">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/15.jpg" class="d-block feature-img mx-auto" alt="Imagem 18">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/01.png" class="d-block feature-img mx-auto" alt="Imagem 19">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/16.png" class="d-block feature-img mx-auto" alt="Imagem 20">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/17.png" class="d-block feature-img mx-auto" alt="Imagem 21">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/18.png" class="d-block feature-img mx-auto" alt="Imagem 22">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/16.jpg" class="d-block feature-img mx-auto" alt="Imagem 23">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-
-            <!-- Descrição Dinâmica -->
-            <div class="container project-description" class="ptechs-container">
-                <h3 id="projectTitle">Encontros e Atividades</h3>
-                <p id="projectDetails">
-                    Aqui eu irei mostrar todos os encontros e atividades que eu tive nesses três anos de Ptechs/ACPS
-                </p>
-            </div>
-        </div>
-       
-    </section>
+const projectData = [
+    {
+        title: "Minha Jornada",
+        description: "Esta seção destaca minha experiência e crescimento durante três anos no programa Ptechs/ACPS, onde compartilho momentos importantes, aprendizagens e conexões."
+    },
+    {
+        title: "Prêmios",
+        description: "Todos os prêmios que eu recebi."
+    },
+    {
+        title: "Primeiro encontro (25/03/2022)",
+        description: "Nossa reunião inicial no P-tech foi essencial para criar um ambiente colaborativo e definir como as palestras e atividades contribuiriam para nosso desenvolvimento profissional. Focamos em aprimorar habilidades práticas e em promover o envolvimento de todos os participantes."
+    },
+    {
+        title: "Conduta Ética (19/04/2022)",
+        description: "Exploramos a importância da ética no ambiente de trabalho, discutindo dilemas como o de um funcionário em situação de urgência pessoal. Esse exercício destacou a complexidade entre decisões pessoais e a integridade profissional."
+    },
+    {
+        title: "Visita na EDUZZ (13/05/2022)",
+        description: "A visita à EDUZZ proporcionou uma visão do dinamismo de trabalho em uma empresa focada em inovação e colaboração. Pude acompanhar as interações das equipes e participar de sessões de brainstorming, reforçando a importância do trabalho em equipe."
+    },
+    {
+        title: "Ikigai (12/08/2022)",
+        description: "Já no quinto aula de P-Tech, foi nos ensinado sobre o 'Ikigai' e a sua importancia na nossa vida técnica desenvolvida para nos autoconhecermos em nossa vida pessoal e profissional.."
+    },
+    {
+        title: "Comunicação Interpessoal - como melhorar a sua? (30/09/2022)",
+        description: "Exploramos maneiras de aprimorar a comunicação interpessoal, enfatizando a importância da escuta ativa, clareza nas mensagens e a prática de empatia para evitar mal-entendidos e fortalecer conexões."
+    },
+    {
+        title: "Dia a dia do analista de suporte (27/04/2023)",
+        description: "Compreender a rotina de um analista de suporte me permitiu valorizar o papel de resolução de problemas técnicos e o suporte aos usuários. Aprendi como priorizar questões e manter a eficiência operacional com foco no atendimento ao cliente."
+    },
+    {
+        title: "Nova Parceria - ITIX (04/05/2023)",
+        description: "A ITIX, empresa de tecnologia com foco em IA, juntou-se como parceira da escola, proporcionando uma experiência interativa e de aprendizado. Tivemos sorteios de brindes e atividades que mostraram como a inovação é uma aliada estratégica para o futuro."
+    },
+    {
+        title: "De Estagiária a Analista: Quando Conversar Conta Tanto Quanto Codar! (05/05/2023)",
+        description: "Ao avançar de estagiária para Analista de Requisitos, descobri o impacto da comunicação para transformar ideias em soluções eficazes. Esse aprendizado evidenciou a importância do equilíbrio entre habilidades técnicas e interpessoais."
+    },
+    {
+        title: "Palestra e Oficina: como gerenciar seu talento (22/09/2023)",
+        description: "Participar dessa oficina foi um passo importante para aprender a gerenciar talentos e construir um currículo que destaque realizações e habilidades. Descobri a importância de adaptar o currículo para cada oportunidade."
+    },
+    {
+        title: "Treinamento presencial de uma nova ferramenta da ITIX (19/11/23)",
+        description: "Durante um treinamento prático, desenvolvemos um projeto com técnicas de Scrum e colaboração em equipe. Aprendi muito e criei uma logo para nosso projeto de reciclagem, que reforçou meu gosto pelo design e criatividade."
+    },
+    {
+        title: "Criatividade e Inovação: Um Desafio Constante (08/04/2024)",
+        description: "Compreendi como criatividade e inovação são vitais para enfrentar desafios em um mercado em constante mudança. Aprender a colaborar e experimentar novas ideias foram pontos chave para cultivar esse mindset."
+    },
+    {
+        title: "As possibilidades da IA no mercado de trabalho (23/05/2024)",
+        description: "Exploramos o papel crescente da IA no ambiente profissional, discutindo como a automação e o aprendizado de máquina criam novas oportunidades e demandam habilidades atualizadas, adaptadas a um mercado em evolução."
+    },
+    {
+        title: "Liderança e Gestão 3.0 (27/05/2024)",
+        description: "Essa nova abordagem de liderança prioriza autonomia e colaboração, onde os líderes incentivam as equipes a tomar decisões e a se desenvolverem continuamente, promovendo um ambiente de aprendizado constante."
+    },
+    {
+        title: "Homelabs (18/06/2024)",
+        description: "Construir um homelab me permitiu experimentar tecnologias e aprimorar habilidades práticas. Criar um ambiente de testes foi fundamental para desenvolver soluções inovadoras e aprofundar o conhecimento em TI."
+    },
+    {
+        title: "Hacker do bem e a segurança digital no dia-a-dia (31/07/2024)",
+        description: "Aprendemos sobre o papel do hacker ético na proteção dos dados e segurança de sistemas, entendendo também a importância de práticas cotidianas para garantir nossa segurança digital."
+    },
+    {
+        title: "Você é uma pessoa organizada? (28/08/2024)",
+        description: "Organização é essencial para manter a produtividade. Explorei métodos práticos para priorizar tarefas e evitar sobrecargas, promovendo uma rotina mais eficiente e equilibrada."
+    },
+    {
+        title: "Fluxo de Operações Comercial - UNO (29/08/2024)",
+        description: "Aprendi como a integração do ERP pode otimizar operações comerciais, proporcionando uma visão completa dos processos e facilitando a tomada de decisões estratégicas para aumentar a eficiência."
+    },
+    {
+        title: "IA + TI e outras tecnologias (05/09/2024)",
+        description: "A inteligência artificial e novas tecnologias estão transformando o setor de TI, exigindo adaptação e desenvolvimento constante de habilidades. Desenvolvi um projeto pessoal, um jogo socioemocional, que em breve estará no meu portfólio."
+    },
+    {
+        title: "Como posso ter uma carreira bem-sucedida? (19/09/2024)",
+        description: "Descobri a importância de criar uma marca pessoal autêntica e investir em habilidades técnicas e interpessoais. Manter uma rede ativa e compartilhar experiências são passos importantes para se destacar no mercado."
+    },
+    {
+        title: "Capricho: skill cada vez mais raro no Mercado (24/09/2024)",
+        description: "Capricho é uma característica que se reflete na atenção aos detalhes e na qualidade do trabalho. É um diferencial que poucos mantêm, mas que valoriza o profissional no mercado de trabalho."
+    },
+    {
+        title: "Desenvolvimento Low Code (10/10/2024)",
+        description: "Low code e no code facilitam o desenvolvimento rápido de soluções, permitindo que ideias sejam rapidamente testadas sem necessidade de programação intensa, acelerando o processo de inovação."
+    },
+    {
+        title: "Criatividade e inovação | IOCHPE (11/10/2024)",
+        description: "A palestra da Fundação Ioschpe trouxe insights sobre criatividade e inovação, com métodos práticos para estimular ideias e aprimorar o desenvolvimento de soluções tecnológicas em nosso dia a dia."
+    },
+    {
+        title: "Preparando-se para o amanhã: da FATEC para o mundo (17/10/2024)",
+        description: "O evento da FATEC inspirou a importância de uma rede de contatos e desenvolvimento contínuo, com anúncios de parcerias que reforçam o aprendizado e o preparo para o mercado de trabalho."
+    },
+];
 
 
-
-    <!-- script -->
-    <script src="scripts/index.js"></script>
-    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
-    <script src="scripts/main.js"></script>
-</body>
-</html>
-
+document.getElementById("projectCarousel").addEventListener('slide.bs.carousel', function (e) {
+    const nextIndex = e.to;
+    projectTitle.innerHTML = projectData[nextIndex].title;
+    projectDetails.innerHTML = projectData[nextIndex].description; 
+});
