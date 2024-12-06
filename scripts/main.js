@@ -102,6 +102,28 @@ const projectData = [
         title: "Preparando-se para o amanhã: da FATEC para o mundo (17/10/2024)",
         description: "O evento da FATEC inspirou a importância de uma rede de contatos e desenvolvimento contínuo, com anúncios de parcerias que reforçam o aprendizado e o preparo para o mercado de trabalho."
     },
+    {
+        title: "A Revolução da Web3 e a Propriedade Digital 04/11",
+        description: "No dia 04/11, assistimos a uma palestra da IOCHPE pelo Youtube com o tema: 'A Revolução da Web3 e a Propriedade Digital', ministrada pelo palestrante Caio Mattos ."
+    },
+    {
+        title: "Blockchain  05/11",
+        description: "No dia 05/11, tivemos uma palestra/oficina dada pela NearX"
+    },
+    {
+        title: "Estudo sobre Inteligência Artificial. - Itix (30/11/2024)",
+        description: "Uma resenha sobre o futuro da carreira em Tecnologia a partir de um documentário."
+    },
+    {
+        title: "Gerenciamento de Projeto - UNO (02/12/2024)",
+        description: "Gerenciamento de demandas de ERP."
+    },
+    {
+        title: "Apêndice-8 (06/12/2024)",
+        description: "Formulário de auto Avaliação."
+    },
+
+
 ];
 
 
