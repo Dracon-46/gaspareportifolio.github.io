@@ -121,7 +121,7 @@ const projectData = [
     {
         title: "Apêndice-8 (06/12/2024)",
         description: "Formulário de auto Avaliação."
-    },
+    }
 
 
 ];
